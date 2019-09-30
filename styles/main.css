@@ -1,0 +1,145 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("../images/background_ktg42x_c_scale,w_365.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+}
+
+main {
+  padding-bottom: 2.5rem; /* Footer height */
+  min-height: 100vh;
+}
+
+article {
+  padding: 30px;
+}
+
+/****** header content *********/
+
+header {
+  align-items: center;
+  background-color: #1c1c1c;
+  border-bottom: 1px solid #797979;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+}
+
+header button {
+  background-color: #7d7e7d;
+  background-image: linear-gradient(to bottom, #7d7e7d, #0e0e0e);
+  border-radius: 3px;
+  border: 1px solid #616261;
+  color: #ffffff;
+  display: inline-block;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+header button:hover {
+  background-color: #646464;
+  background-image: linear-gradient(to bottom, #646464, #282828);
+  border: 1px solid #4a4b4a;
+  cursor: pointer;
+}
+
+.page-description {
+  color: white;
+  font-size: 1.5em;
+}
+
+.logo {
+  height: auto;
+  margin-right: 10px;
+  width: 50px;
+}
+
+/****** main content *********/
+
+.hotel-img {
+  border: 3px solid white;
+  height: auto;
+  max-width: 100%;
+}
+
+.hotel-name-header {
+  margin-bottom: 5px;
+}
+
+.address-section {
+  margin-bottom: 25px;
+}
+
+address {
+  color: #86a3be;
+  font-size: 1.2em;
+  font-style: normal;
+  line-height: 1.7em;
+}
+
+address a {
+  color: white;
+}
+
+dl > dt > button {
+  align-items: center;
+  background-image: linear-gradient(to bottom, #e6eaed, #c1cedb);
+  color: #203850;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0px 20px;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+}
+
+dl > dt > button:hover {
+  background-color: #c8d1d8;
+  background-image: linear-gradient(to bottom, #c8d1d8, #afbbc7);
+  border: 1px solid #abb8c2;
+  cursor: pointer;
+}
+
+.first-accordion-button {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.last-accordion-button {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+dl > dt > button > i {
+  font-size: 1.5em;
+}
+
+/****** footer content *********/
+
+footer {
+  align-items: center;
+  background-color: #1c1c1c;
+  color: white;
+  display: flex;
+  height: 2.5rem;
+  padding: 0px 20px;
+}
+
+/****** modification content *********/
+@media only screen and (max-width: 295px) {
+  body {
+    background-image: url("../images/background_ktg42x_c_scale,w_295.png");
+  }
+}

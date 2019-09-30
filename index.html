@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Hotel Details - Hilton Chicago</title>
+    <link href="styles/main.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button><i class="fas fa-chevron-left"></i> Back</button>
+      </nav>
+      <h1 class="page-description">Hotel Details</h1>
+      <h1>
+        <a href="/" rel="home"
+          ><img
+            class="logo"
+            src="./images/hiltonbrandlogo.png"
+            alt="Hilton Logo"
+        /></a>
+      </h1>
+    </header>
+    <main>
+      <article>
+        <picture>
+          <img
+            class="hotel-img"
+            sizes="(max-width: 675px) 100vw, 675px"
+            srcset="
+              ./images/hotelexterior_whkw1k_c_scale,w_200.jpg 200w,
+              ./images/hotelexterior_whkw1k_c_scale,w_358.jpg 358w,
+              ./images/hotelexterior_whkw1k_c_scale,w_481.jpg 481w,
+              ./images/hotelexterior_whkw1k_c_scale,w_675.jpg 675w
+            "
+            src="./images/hotelexterior_whkw1k_c_scale,w_675.jpg"
+            alt="Chicago Hilton - exterior view"
+          />
+        </picture>
+
+        <h1 class="hotel-name-header">Hilton Chicago</h1>
+
+        <section class="address-section">
+          <address>
+            720 South Michigan Avenue<br />
+            Chicago, Illinois, 60605<br />
+            <a href="tel:+13129224400">1-312-922-4400</a>
+          </address>
+        </section>
+        <section>
+          <dl>
+            <dt>
+              <button
+                class="first-accordion-button"
+                aria-controls="map"
+                aria-expanded="false"
+              >
+                <h2>Map</h2>
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </dt>
+            <dd id="map" hidden>
+              <p>
+                show map
+              </p>
+            </dd>
+            <dt>
+              <button aria-controls="photo-gallery" aria-expanded="false">
+                <h2>Photo gallery</h2>
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </dt>
+            <dd id="photo-gallery" hidden>
+              <p>
+                show photo-gallery
+              </p>
+            </dd>
+            <dt>
+              <button
+                class="last-accordion-button"
+                aria-controls="photo-gallery"
+                aria-expanded="false"
+              >
+                <h2>Amenities</h2>
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </dt>
+            <dd id="photo-gallery" hidden>
+              <p>
+                show amenities
+              </p>
+            </dd>
+          </dl>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <small>&copy; Hilton</small>
+    </footer>
+  </body>
+</html>
